@@ -1,0 +1,52 @@
+.header {
+  /*it will stick to the top*/
+  position: sticky;
+/*  display flex - everything goes into a line. I want everything to be in a row*/
+display: flex;
+background-color: white;
+/*so the header__right (title,icons) will have an event space between header__left (linkedin logo, the searchbar)*/
+justify-content: space-evenly;
+/*the tiny gray line in the bottom*/
+border-bottom: 0.1px solid lightgray;
+/*little padding so it won't be 'stuck' on top and bottom*/
+padding-top: 10px;
+padding-bottom: 10px;
+width: 100%;
+z-index: 999;
+}
+
+.header__left {
+  display: flex;
+}
+
+.header__left > img {
+/* when I re-size my linkedin img it will keep the aspect ratio */
+  object-fit: contain;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
+
+/*the search icon*/
+.header__search {
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 22px;
+  color: gray;
+  background-color: #eef3f8;
+}
+
+/*make the search bar completley clear, no color*/
+.header__left > input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/*so the title, icons will be in a row, display flex default is a row*/
+.header__right {
+  display: flex;
+}

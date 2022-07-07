@@ -1,0 +1,116 @@
+.sidebar {
+  position: sticky;
+  /*since It's on the side and the top begins later than 0*/
+  top: 80px;
+  /*the child sidebar (parent is in the app.css) is getting the percent of the screen size with display-flex*/
+  flex: 0.2;
+  border-radius: 10px;
+  text-align: center;
+  height: fit-content;
+}
+
+.sidebar__avatar {
+  /*space a bit between the avatar logo and the sidebar text*/
+    margin-bottom: 10px;
+}
+
+.sidebar__top > h4 {
+  color: gray;
+  font-size: 20px;
+}
+
+
+.sidebar__top > h2 {
+  font-size: 18px;
+}
+
+
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  /*I dont want the border to have a bottom*/
+  border-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+/*targeting the img*/
+.sidebar__top > img {
+  /*drop the sidebar into the img a bit*/
+  margin-bottom: -20px;
+  width: 100%;
+  height: 60px;
+  /*corners of the img will be slightly round*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.sidebar__stat {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar__stat > p {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sidebar__stats {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar__statNumber {
+  font-weight: bold;
+  /*to override the materialize things*/
+  color: #0a66c2 !important;
+}
+
+.sidebar_bottom {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/*sidebar recentItems with #*/
+.sidebar__recentItem {
+  display: flex;
+  font-size: 13px;
+  color: gray;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/*the recent p itself*/
+.sidebar_bottom > p{
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+
+/*the hover on them*/
+.sidebar__recentItem:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+/*the # themselves so they will be in the same line ordered with the recentItems*/
+.sidebar_hash {
+  margin-right: 10px;
+  margin-left: 5px;
+}

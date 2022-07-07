@@ -1,0 +1,19 @@
+.inputOption {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  color: gray;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*hover effect color gray and border radius when clicking*/
+.inputOption:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+/*the title of each icon will be have a bit of a margin left*/
+.inputOption > h4 {
+  margin-left: 5px;
+}

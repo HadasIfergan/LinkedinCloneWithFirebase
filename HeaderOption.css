@@ -1,0 +1,28 @@
+.headerOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: gray;
+  /*so when we hover the icons and titles we'll have the pointer mouse*/
+  cursor: pointer;
+}
+
+.headerOption__title {
+  font-size: 12px;
+  /*font is more clear at the top*/
+  font-weight: 400;
+}
+
+.headerOption__icon {
+  /*Again keep the asper racio*/
+  object-fit: contain;
+  height: 25px;
+  width: 25px;
+}
+
+/*when I hover it, change to black*/
+.headerOption:hover {
+  color: black;
+}
+

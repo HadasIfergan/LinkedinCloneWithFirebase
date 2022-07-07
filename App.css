@@ -1,0 +1,7 @@
+
+.app__body {
+  /*20% of the screen is the left sidebar*/
+  /*this is the parent flex, aka the child sidebar.css have the display-flex number there*/
+  display: flex;
+  background-color: #f3f2ef;
+}
